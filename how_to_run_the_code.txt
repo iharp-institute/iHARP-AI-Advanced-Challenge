@@ -1,0 +1,29 @@
+Train on 70 images new
+
+python englacial_attention_unet_pytorch.py train \
+    --images "./Train/Raw-Images" \
+    --masks "./Train/Expert-Mask-Images" \
+    --output "./attention_unet_model_output" \
+    --epochs 300 \
+    --patience 30 \
+    --folds 2 \
+    --batch-size 2 \
+    --patch-size 128 \
+    --base-filters 32 \
+    --lr 0.0001 \
+    --workers 4 \
+    --device cuda:1
+
+
+Inference on batch/ multiple images
+
+python englacial_batch_inference.py \
+    --checkpoint "./attention_unet_model_output/fold_2_best.pt" \
+    --images "./Test/Raw-Images" \
+    --masks "./Test/Expert-Mask-Images" \
+    --output "./predictions_batch/" \
+    --threshold 0.5 \
+    --batch-size 4 \
+    --device cuda:1 \
+    --save-probability \
+    --require-masks
