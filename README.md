@@ -14,6 +14,7 @@ Automated detectors return broken fragments, not continuous layers. Layers are o
 
 
 The Task
+
 Participants will build/train/finetune AI/ML supervised models that detect englacial layers in Greenland radargrams. You can use (Transfer learning/Few-shot learning/Meta learning, etc). This is a fine-grained curvilinear detection problem: the targets are long, thin, curved lines, background pixels far outnumber layer pixels, and an error of one or two pixels is enough to break a layer.
 
 Your model needs to do two things well:
