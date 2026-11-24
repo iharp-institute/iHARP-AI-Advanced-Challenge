@@ -1,7 +1,9 @@
 # iHARP-AI-Advanced-Challenge
 This repository is to kick-start the iHARP AI Advanced Course Challenge on Englacial Layer Annotation.
 
-1. Background and Motivation: 
+**Join the challenge: https://www.codabench.org/competitions/18659/**
+
+**1. Background and Motivation:**
 
 The Greenland and Antarctic ice sheets hold enough ice to raise global sea level by about 7.42 m and 57.9 m, respectively. Knowing how fast that ice will reach the ocean depends on knowing how these ice sheets gained snow, flowed, and deformed in the past. A key record of that history is stored inside the ice itself.
 
@@ -14,7 +16,7 @@ i) Manual tracing does not scale - Experts trace layers by hand, one image at a 
 ii) Automated detectors return broken fragments, not continuous layers - Layers are only a few pixels thick, closely spaced, faint at depth, and buried in radar noise, so models tend to output short, disconnected pieces.
 
 
-2. The Task:
+**2. The Task:**
 
 Participants will build/train/finetune AI/ML supervised models that detect englacial layers in Greenland radargrams. You can use (Transfer learning/Few-shot learning/Meta learning, etc). This is a fine-grained curvilinear detection problem: the targets are long, thin, curved lines, background pixels far outnumber layer pixels, and an error of one or two pixels is enough to break a layer.
 
@@ -25,3 +27,5 @@ i) Detect: for each radargram, output a binary mask that marks every layer pixel
 ii) Stay consistent: where two consecutive radargrams meet, the same layer should continue across the boundary without jumping, splitting, or vanishing.
 
 **Note: **Strong solutions will help turn years of radar surveys into continuous, trustworthy layer maps of the Greenland Ice Sheet.
+
+**Join the challenge: https://www.codabench.org/competitions/18659/**
