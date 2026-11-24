@@ -9,8 +9,9 @@ Airborne ice-penetrating radar, operated by the Center for Remote Sensing and In
 
 Turning radargrams into usable layer data is hard:
 
-Manual tracing does not scale. Experts trace layers by hand, one image at a time, while every survey season adds far more images than people can trace.
-Automated detectors return broken fragments, not continuous layers. Layers are only a few pixels thick, closely spaced, faint at depth, and buried in radar noise, so models tend to output short, disconnected pieces.
+Manual tracing does not scale - Experts trace layers by hand, one image at a time, while every survey season adds far more images than people can trace.
+
+Automated detectors return broken fragments, not continuous layers - Layers are only a few pixels thick, closely spaced, faint at depth, and buried in radar noise, so models tend to output short, disconnected pieces.
 
 
 The Task:
